@@ -10,7 +10,7 @@ const Nav = () => {
                 Jérôme Richard
                 </NavLink>
                 <NavLink className="navigation-nav-items" to="/Competences">
-                Compétences
+                Skills
                 </NavLink>
                 <NavLink className="navigation-nav-items" to="/Creations">
                 Créations

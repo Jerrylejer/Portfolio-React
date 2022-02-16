@@ -3,9 +3,9 @@ import './header.scss';
 
 const Header = () => {
     return (
-        <div className="devops">
+        <div className="devops-wrapper">
             <div>
-                <p>Développeur Web Full Stack Junior</p>
+                <p>Développeur Web Full Stack JS Junior</p>
             </div>
         </div>
     );

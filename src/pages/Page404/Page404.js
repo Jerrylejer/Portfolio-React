@@ -1,11 +1,12 @@
 import React from 'react';
 import Header from '../../components/Header/Header';
+import './page404.scss'
 
 const Page404 = () => {
     return (
         <div>
         <Header />
-            Fausse route Baby !
+            <div className="page404">404 ! Wrong Way !</div>
         </div>
     );
 };
