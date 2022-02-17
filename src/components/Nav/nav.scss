@@ -8,7 +8,7 @@
     padding: 2em;
     font-family: 'Poppins';
 
-    &-nav-items {
+    &-nav-items-1 {
         font-size: 20px;
         font-weight: 400;
         text-decoration: none;
@@ -22,7 +22,43 @@
         // background-color: rgba(0, 0, 0, 0);
       }
       
-      &-nav-items::after {
+      &-nav-items-1::after {
+        //* à identifier content
+        content: "";
+        background-color: #c0ce03;
+        width: 100%;
+        // On fait ressortir le texte en dessous
+        z-index: -1;
+        // Positionnement décalé du cadre couleur par rapport au cadre départ
+        position: absolute;
+        height: 100%;
+        top: 7px;
+        left: 7px;
+        // Petite transition pour l'ésthétique
+        transition: 0.2s;
+      }
+      
+      &-nav-items-1:hover::after {
+        // L'animation se positionne pil poil sur le cadre en relative
+        top: 0px;
+        left: 0px;
+      }
+
+      &-nav-items-2 {
+        font-size: 20px;
+        font-weight: 400;
+        text-decoration: none;
+        letter-spacing: 1px;
+        padding: 13px 50px 13px;
+        //* à identifier outline 
+        outline: 0;
+        border: 1px solid black;
+        cursor: pointer;
+        position: relative;
+        // background-color: rgba(0, 0, 0, 0);
+      }
+      
+      &-nav-items-2::after {
         //* à identifier content
         content: "";
         background-color: #e5f503;
@@ -34,11 +70,119 @@
         height: 100%;
         top: 7px;
         left: 7px;
-        // Petite transiction pour l'ésthétique
+        // Petite transition pour l'ésthétique
         transition: 0.2s;
       }
       
-      &-nav-items:hover::after {
+      &-nav-items-2:hover::after {
+        // L'animation se positionne pil poil sur le cadre en relative
+        top: 0px;
+        left: 0px;
+      }
+
+      &-nav-items-3 {
+        font-size: 20px;
+        font-weight: 400;
+        text-decoration: none;
+        letter-spacing: 1px;
+        padding: 13px 50px 13px;
+        //* à identifier outline 
+        outline: 0;
+        border: 1px solid black;
+        cursor: pointer;
+        position: relative;
+        // background-color: rgba(0, 0, 0, 0);
+      }
+      
+      &-nav-items-3::after {
+        //* à identifier content
+        content: "";
+        background-color: #03bdf5;
+        width: 100%;
+        // On fait ressortir le texte en dessous
+        z-index: -1;
+        // Positionnement décalé du cadre couleur par rapport au cadre départ
+        position: absolute;
+        height: 100%;
+        top: 7px;
+        left: 7px;
+        // Petite transition pour l'ésthétique
+        transition: 0.2s;
+      }
+      
+      &-nav-items-3:hover::after {
+        // L'animation se positionne pil poil sur le cadre en relative
+        top: 0px;
+        left: 0px;
+      }
+
+      &-nav-items-4 {
+        font-size: 20px;
+        font-weight: 400;
+        text-decoration: none;
+        letter-spacing: 1px;
+        padding: 13px 50px 13px;
+        //* à identifier outline 
+        outline: 0;
+        border: 1px solid black;
+        cursor: pointer;
+        position: relative;
+        // background-color: rgba(0, 0, 0, 0);
+      }
+      
+      &-nav-items-4::after {
+        //* à identifier content
+        content: "";
+        background-color: #f59803;
+        width: 100%;
+        // On fait ressortir le texte en dessous
+        z-index: -1;
+        // Positionnement décalé du cadre couleur par rapport au cadre départ
+        position: absolute;
+        height: 100%;
+        top: 7px;
+        left: 7px;
+        // Petite transition pour l'ésthétique
+        transition: 0.2s;
+      }
+      
+      &-nav-items-4:hover::after {
+        // L'animation se positionne pil poil sur le cadre en relative
+        top: 0px;
+        left: 0px;
+      }
+
+      &-nav-items-5 {
+        font-size: 20px;
+        font-weight: 400;
+        text-decoration: none;
+        letter-spacing: 1px;
+        padding: 13px 50px 13px;
+        //* à identifier outline 
+        outline: 0;
+        border: 1px solid black;
+        cursor: pointer;
+        position: relative;
+        // background-color: rgba(0, 0, 0, 0);
+      }
+      
+      &-nav-items-5::after {
+        //* à identifier content
+        content: "";
+        background-color: #ed03f5;
+        width: 100%;
+        // On fait ressortir le texte en dessous
+        z-index: -1;
+        // Positionnement décalé du cadre couleur par rapport au cadre départ
+        position: absolute;
+        height: 100%;
+        top: 7px;
+        left: 7px;
+        // Petite transition pour l'ésthétique
+        transition: 0.2s;
+      }
+      
+      &-nav-items-5:hover::after {
         // L'animation se positionne pil poil sur le cadre en relative
         top: 0px;
         left: 0px;
