@@ -8,11 +8,11 @@ import Viepro from '../pages/Viepro/Viepro';
 import Contacts from '../pages/Contacts/Contacts';
 import Page404 from '../pages/Page404/Page404';
 import Footer from '../components/Footer/Footer';
-import './App.css';
+import './app.scss';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
     <Nav /> 
         <Routes>
           <Route path="/" element={<Home />} />
