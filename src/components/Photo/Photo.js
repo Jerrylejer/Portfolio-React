@@ -1,6 +1,7 @@
 import React from 'react';
 import avatar from '../../assets/image/avatar.jpg';
 import './photo.scss';
+import './photoresponsive.scss';
 
 const Photo = () => {
     return (

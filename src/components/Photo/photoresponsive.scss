@@ -1,0 +1,6 @@
+.moi { 
+    /* photo n'apparait pas sur les device en dessous de 1100px */
+@media screen and (max-width: 1100px) {
+    display: none;
+}
+}

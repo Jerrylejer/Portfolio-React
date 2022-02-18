@@ -1,0 +1,50 @@
+.skill-container {
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: space-around;
+    margin: 3em 6em;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 13px 50px 13px; 
+    cursor: pointer;
+
+    &-react-js-icone {
+        height: 4em;
+        width: 6em;
+    }
+
+
+    &-js-icone {
+        height: 4em;
+        width: 6em;
+    }
+
+    &-nodejs-icone {
+        height: 4em;
+        width: 5em;
+    }
+
+    &-css-icone {
+        height: 4em;
+        width: 6em;
+    }
+
+    &-html-icone {
+        height: 4em;
+        width: 6em;
+    }
+
+    &-git-icone {
+        height: 4em;
+        width: 5em;
+    }
+}

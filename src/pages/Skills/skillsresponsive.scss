@@ -1,0 +1,13 @@
+.skill-container {
+    /* menu type colonne dès jusqu'à la largeur 1100px */
+    @media screen and (max-width: 1100px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.span {
+    @media screen and (max-width: 1100px) {
+        margin-bottom: 2em;
+    }
+}
