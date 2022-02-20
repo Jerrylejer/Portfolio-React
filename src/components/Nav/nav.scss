@@ -1,9 +1,8 @@
-// @use 'src/styles/vars';
+@use 'styles/vars';
 
 .navigation {
     display: flex;
     justify-content: center;
-    margin-top: 2em;
     padding: 2em;
     font-family: 'Poppins';
 
@@ -18,13 +17,12 @@
         border: 1px solid black;
         cursor: pointer;
         position: relative;
-        // background-color: rgba(0, 0, 0, 0);
       }
       
       &-nav-items-1::after {
         //* à identifier content
         content: "";
-        background-color: #c0ce03;
+        background-color: vars.$Green;
         width: 100%;
         // On fait ressortir le texte en dessous
         z-index: -1;
@@ -60,7 +58,7 @@
       &-nav-items-2::after {
         //* à identifier content
         content: "";
-        background-color: #e5f503;
+        background-color: vars.$Yellow;
         width: 100%;
         // On fait ressortir le texte en dessous
         z-index: -1;
@@ -96,7 +94,7 @@
       &-nav-items-3::after {
         //* à identifier content
         content: "";
-        background-color: #03bdf5;
+        background-color: vars.$Blue;
         width: 100%;
         // On fait ressortir le texte en dessous
         z-index: -1;
@@ -132,7 +130,7 @@
       &-nav-items-4::after {
         //* à identifier content
         content: "";
-        background-color: #f59803;
+        background-color: vars.$Orange;
         width: 100%;
         // On fait ressortir le texte en dessous
         z-index: -1;
@@ -168,7 +166,7 @@
       &-nav-items-5::after {
         //* à identifier content
         content: "";
-        background-color: #ed03f5;
+        background-color: vars.$Pink;
         width: 100%;
         // On fait ressortir le texte en dessous
         z-index: -1;

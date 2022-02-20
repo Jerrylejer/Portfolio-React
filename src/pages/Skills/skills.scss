@@ -20,31 +20,51 @@
     &-react-js-icone {
         height: 4em;
         width: 6em;
+        animation-duration: 4s;
+        animation-name: turnAround;
     }
-
 
     &-js-icone {
         height: 4em;
         width: 6em;
+        animation-duration: 4s;
+        animation-name: turnAround;
     }
 
     &-nodejs-icone {
-        height: 4em;
+        height: 5em;
         width: 5em;
+        animation-duration: 4s;
+        animation-name: turnAround;
     }
 
     &-css-icone {
         height: 4em;
         width: 6em;
+        animation-duration: 4s;
+        animation-name: turnAround;
     }
 
     &-html-icone {
         height: 4em;
         width: 6em;
+        animation-duration: 4s;
+        animation-name: turnAround;
     }
 
     &-git-icone {
-        height: 4em;
+        height: 5em;
         width: 5em;
+        animation-duration: 4s;
+        animation-name: turnAround;
+    }
+
+    @keyframes turnAround {
+        from {
+            transform: rotate(0turn)
+        }
+        to {
+            transform: rotate(0.9999turn)
+        }
     }
 }
