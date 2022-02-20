@@ -52,6 +52,20 @@
         animation-name: turnAround;
     }
 
+    &-bootstrap-icone {
+        height: 6em;
+        width: 6em;
+        animation-duration: 4s;
+        animation-name: turnAround;
+    }
+
+    &-materialui-icone {
+            height: 5em;
+            width: 5em;
+            animation-duration: 4s;
+            animation-name: turnAround;
+    }
+
     &-git-icone {
         height: 5em;
         width: 5em;
