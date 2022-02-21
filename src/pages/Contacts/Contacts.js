@@ -34,12 +34,22 @@ const Contact = () => {
     // J'agis sur ma div d'alerte
     formMess.innerHTML = 'Ces champs sont requis !';
     formMess.style.opacity = '1';
-    formMess.style.background = 'red';
+    formMess.style.background = '#f59803';
     // Je donne la class CSS aux champs 
     document.getElementById('name').classList.add('error');
     document.getElementById('email').classList.add('error');
     document.getElementById('message').classList.add('error');
   }
+
+    // Message en cas de succès de l'envoi
+    const completedForm = () => {
+      // Je stocke ma div contenant mon message
+      let formMess = document.querySelector('.form-message');
+      // J'agis sur ma div d'alerte
+      formMess.innerHTML = 'Le message a bien été envoyé !';
+      formMess.style.opacity = '1';
+      formMess.style.background = '#c0ce03';
+    }
 
   // Communication des variables modifiées au template de emailjs au submit
   const handleSubmit = (e) => {
@@ -66,7 +76,7 @@ const Contact = () => {
       .send("service_wr59ilc", templateId, variables)
       // Puis remise valeurs par défaut du state du formulaire via le setState
       .then((res) => {
-        console.log('success !');
+        completedForm()
         setName("");
         setCompany("");
         setPhone("");

@@ -71,8 +71,8 @@ input {
   box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.32);
 }
 
-// Mise en forme des messages d'erreurs à la soumission du formulaire
-// En cas d'erreur ou d'oubli => le placeHolder change de style au moment de la soumission
+//! Mise en forme des messages d'erreurs à la soumission du formulaire
+//! En cas d'erreur ou d'oubli => le placeHolder change de style au moment de la soumission
 
 .error::placeholder {
     color: red;
@@ -94,3 +94,4 @@ input {
     right: 6em;
     color: red;
 }
+
