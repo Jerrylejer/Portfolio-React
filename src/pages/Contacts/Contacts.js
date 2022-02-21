@@ -11,24 +11,60 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  // Envoi du formulaire des données à emailjs (avec blocage du rafraichissement de la page)
+  // Vérification de la validité de l'email renseigné
+  const isEmail = () => {
+    // Récupération dans le dom du <label id="not-mail">Cet email n'est pas valide</label> 
+    let mail = document.getElementById('not-mail');
+    // Vérification par le regex des motifs rentrés dans l'input, matchent-ils ?
+    let regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    // Affichage ou non de la non validité
+    if(email.match(regex)) {
+      mail.style.display = 'none';
+      return true;
+    } else {
+      mail.style.display = 'block';
+      return false;
+    }
+  }
+
+  // Message en cas de non respect des champs obligatoires
+  const uncompletedForm = () => {
+    // Je stocke ma div contenant mon message
+    let formMess = document.querySelector('.form-message');
+    // J'agis sur ma div d'alerte
+    formMess.innerHTML = 'Ces champs sont requis !';
+    formMess.style.opacity = '1';
+    formMess.style.background = 'red';
+    // Je donne la class CSS aux champs 
+    document.getElementById('name').classList.add('error');
+    document.getElementById('email').classList.add('error');
+    document.getElementById('message').classList.add('error');
+  }
+
+  // Communication des variables modifiées au template de emailjs au submit
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    sendFeedback("template_jkymd5p", {
-      name,
-      company,
-      phone,
-      email,
-      message,
-    });
+    if(name && isEmail() && message) {
+      sendFeedback("template_jkymd5p", {
+        // Variables modifiées par le state
+        name,
+        company,
+        phone,
+        email,
+        message,
+      });
+    } else {
+      uncompletedForm();
+    }
   };
 
-  // Mises à jour des states via le setState du useState
+  // Envois et mises à jour des states via le setState du useState
   const sendFeedback = (templateId, variables) => {
-
     window.emailjs
-      .send("gmail", templateId, variables)
+      // Envoi de l'email qui prend en params le templateId et les variables modifiées
+      .send("service_wr59ilc", templateId, variables)
+      // Puis remise valeurs par défaut du state du formulaire via le setState
       .then((res) => {
         console.log('success !');
         setName("");
@@ -76,7 +112,7 @@ const Contact = () => {
           value={phone}
         />
         <div className="email-content">
-          <label id="not-mail"></label>
+          <label id="not-mail">***Cet email n'est pas valide***</label>
           <input
             type="mail"
             id="email"

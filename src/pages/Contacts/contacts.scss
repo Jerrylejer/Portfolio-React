@@ -4,6 +4,12 @@
     flex-direction:column;
     justify-content: center;
     align-items: center;
+    overflow-x:  hidden;
+    margin-bottom: -1em;
+}
+
+h2 {
+    margin-top: -1em;
 }
 
 .contact-form {
@@ -21,8 +27,9 @@
 
 .textarea {
   font-family: 'poppins';
-    padding: 3em 8em;
+    padding: 3em 3em;
     margin-bottom: 1em;
+    margin-top: 1em;
 }
 
 input {
@@ -31,12 +38,21 @@ input {
     margin-bottom: 1em;
 }
 
+.email-content {
+    position: relative;
+}
+
+#email {
+    width: 22em;
+}
+
 .button {
     font-size: 1em;
     font-weight: 400;
     text-decoration: none;
     letter-spacing: 1px;
     padding: 0.5em 2em 0.5em;
+    margin-bottom: -0.3em;;
     outline: 0;
     border: 1px solid black;
     border-radius: 5px;
@@ -47,8 +63,34 @@ input {
 }
 
 .button:hover {
-  transform: scale(1.1);
+  transform: scale(1.03);
   transition: 0.3s;
   background: rgb(222,222,222);
   background: linear-gradient(120deg, rgba(222,222,222,1) 0%, rgba(84,245,38,1) 50%, rgba(221,221,221,1) 100%);
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.32); 
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.32);
+}
+
+// Mise en forme des messages d'erreurs à la soumission du formulaire
+// En cas d'erreur ou d'oubli => le placeHolder change de style au moment de la soumission
+
+.error::placeholder {
+    color: red;
+}
+
+.form-message {
+    margin-top: 0.8em;
+    padding: 0.2em;
+    opacity: 0;
+    color: black;
+    transition: 0.2s ease;
+    border-radius: 10px;
+}
+
+#not-mail {
+    display: none;
+    position: absolute;
+    bottom: -0.8em;
+    right: 6em;
+    color: red;
 }
