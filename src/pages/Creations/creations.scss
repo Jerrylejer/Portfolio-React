@@ -4,3 +4,31 @@
     font-family: 'shizuru';
     font-size: 2em;
 }
+
+.dyl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-dyl {
+    max-width: 10em;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    &-dyl {
+        width: 50%;
+        text-align: center;
+        font-size: 1.3em;
+        line-height: 1.3em;
+        font-family: 'Poppins';
+    }
+}
+
+
