@@ -1,6 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Nav from '../components/Nav/Nav';
+import NavBurger from '../components/NavBurger/NavBurger';
 import Home from '../pages/Home/Home';
 import Skills from '../pages/Skills/Skills';
 import Creations from '../pages/Creations/Creations';
@@ -14,6 +15,7 @@ function App() {
     return (
         <div className='app'>
             <Nav />
+            <NavBurger />
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/Competences' element={<Skills />} />

@@ -24,7 +24,7 @@ const Viepro = () => {
                 file='/CV_2022-03-23_Jérôme_Richard.pdf'
                 onLoadSuccess={onDocumentLoadSuccess}
             >
-                <Page height='1500' pageNumber={pageNumber} />
+                <Page height='3000' pageNumber={pageNumber} />
             </Document>
         </div>
     );

@@ -1,13 +1,17 @@
-.viePro {
-    display: flex;
-    justify-content: center;
-    font-family: 'shizuru';
-    font-size: 2em;
-}
+// .vie-pro {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     font-family: 'shizuru';
+//     font-size: 2em;
+// }
 
 .pdf {
     display: flex;
     justify-content: center;
+    transform: scale(0.7);
+    margin: -25em auto -25em auto;
 }
 
-// Responsive
+

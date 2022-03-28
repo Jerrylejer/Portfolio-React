@@ -1,41 +1,49 @@
 .pdf {
+    @media screen and (max-width: 1450px) {
+        display: flex;
+        justify-content: center;
+        transform: scale(0.5);
+        margin-top: -45em;
+        margin-bottom: -45em;
+    }
+
     @media screen and (max-width: 1100px) {
         display: flex;
         justify-content: center;
-        transform: scale(0.7);
-        margin-top: -15em;
-        margin-bottom: -15em;
+        transform: scale(0.4);
+        margin-top: -55em;
+        margin-bottom: -55em;
     }
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 850px) {
         display: flex;
         justify-content: center;
-        transform: scale(0.6);
-        margin-top: -20em;
-        margin-bottom: -20em;
+        transform: scale(0.3);
+        margin-top: -65em;
+        margin-bottom: -65em;
     }
 
     @media screen and (max-width: 650px) {
         display: flex;
         justify-content: center;
-        transform: scale(0.5);
-        margin-top: -25em;
-        margin-bottom: -25em;
+        transform: scale(0.25);
+        margin-top: -72em;
+        margin-bottom: -72em;
     }
 
     @media screen and (max-width: 550px) {
         display: flex;
         justify-content: center;
-        transform: scale(0.45);
-        margin-top: -27em;
-        margin-bottom: -27em;
+        transform: scale(0.2);
+        margin-top: -78em;
+        margin-bottom: -78em;
     }
 
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 500px) {
         display: flex;
         justify-content: center;
-        transform: scale(0.3);
-        margin-top: -30em;
-        margin-bottom: -30em;
+        transform: scale(0.15);
+        margin-top: -82em;
+        margin-bottom: -82em;
     }
 }
