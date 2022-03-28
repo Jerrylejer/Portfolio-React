@@ -14,8 +14,6 @@ class NavBurger extends Component {
         console.log(this.icon);
         this.modal = React.createRef();
         console.log(this.modal);
-
-        // this.openNav = this.openNav.bind(this);
     }
 
     openNav = () => {
@@ -31,12 +29,6 @@ class NavBurger extends Component {
                     ref={this.openIcon}
                     onClick={this.openNav}
                 />
-                {/* <FontAwesomeIcon
-                    icon={faTimes}
-                    className='navbar-icon-close'
-                    ref={this.closeIcon}
-                    onClick={this.closeNav}
-                /> */}
                 <div className='navbar-modal' ref={this.modal}>
                     <nav className='navigation-nav-mobile'>
                         <NavLink

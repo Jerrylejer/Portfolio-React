@@ -1,17 +1,22 @@
-// .vie-pro {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     font-family: 'shizuru';
-//     font-size: 2em;
-// }
+.vie-pro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    &-text {
+        margin-top: -2.5em;
+        font-family: 'Poppins';
+    }
+}
 
 .pdf {
     display: flex;
     justify-content: center;
-    transform: scale(0.7);
-    margin: -25em auto -25em auto;
+    align-items: center;
+    margin-bottom: -5.5em;
 }
 
 
