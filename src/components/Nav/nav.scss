@@ -6,184 +6,187 @@
     padding: 2em;
     font-family: 'Poppins';
 
+    //! Element de départ
     &-nav-items-1 {
         font-size: 20px;
         font-weight: 400;
         text-decoration: none;
         letter-spacing: 1px;
         padding: 13px 50px 13px;
-        //* à identifier outline 
         outline: 0;
         border: 1px solid black;
         cursor: pointer;
+        //? Position relative (la référence pour le décalage du cadre coloré :: after)
         position: relative;
-      }
-      
-      &-nav-items-1::after {
-        //* à identifier content
-        content: "";
+    }
+
+    //! Ici on construit "l'ombre" placée avent l'élémént de départ (::before)
+    &-nav-items-1::before {
+        content: '';
         background-color: vars.$Green;
         width: 100%;
-        // On fait ressortir le texte en dessous
+        //? On fait ressortir le texte en dessous
         z-index: -1;
-        // Positionnement décalé du cadre couleur par rapport au cadre départ
+        //? Positionnement décalé du cadre couleur par rapport au cadre départ (relative)
         position: absolute;
         height: 100%;
+        //? décalage du cadre par rapport à relative
+        top: -7px;
+        left: -7px;
+        //? Petite transition pour l'ésthétique
+        transition: 0.2s;
+    }
+
+    //! Ici on construit "l'ombre" placée après l'élémént de départ (::after)
+    &-nav-items-1::after {
+        content: '';
+        background-color: vars.$Green;
+        width: 100%;
+        //? On fait ressortir le texte en dessous
+        z-index: -1;
+        //? Positionnement décalé du cadre couleur par rapport au cadre départ (relative)
+        position: absolute;
+        height: 100%;
+        //? décalage du cadre par rapport à relative
         top: 7px;
         left: 7px;
-        // Petite transition pour l'ésthétique
+        //? Petite transition pour l'ésthétique
         transition: 0.2s;
-      }
-      
-      &-nav-items-1:hover::after {
-        // L'animation se positionne pil poil sur le cadre en relative
+    }
+
+    //! hover placé sur le ::before et qui l'anime
+    &-nav-items-1:hover::before {
+        //? L'animation positionne le cadre absolute sur le cadre relative
         top: 0px;
         left: 0px;
-      }
+    }
 
-      &-nav-items-2 {
+    //! hover placé sur le ::after et qui l'anime
+    &-nav-items-1:hover::after {
+        //? L'animation positionne le cadre absolute sur le cadre relative
+        top: 0px;
+        left: 0px;
+    }
+
+    &-nav-items-2 {
         font-size: 20px;
         font-weight: 400;
         text-decoration: none;
         letter-spacing: 1px;
         padding: 13px 50px 13px;
-        //* à identifier outline 
         outline: 0;
         border: 1px solid black;
         cursor: pointer;
         position: relative;
         // background-color: rgba(0, 0, 0, 0);
-      }
-      
-      &-nav-items-2::after {
-        //* à identifier content
-        content: "";
+    }
+
+    &-nav-items-2::after {
+        content: '';
         background-color: vars.$Yellow;
         width: 100%;
-        // On fait ressortir le texte en dessous
         z-index: -1;
-        // Positionnement décalé du cadre couleur par rapport au cadre départ
         position: absolute;
         height: 100%;
         top: 7px;
         left: 7px;
-        // Petite transition pour l'ésthétique
         transition: 0.2s;
-      }
-      
-      &-nav-items-2:hover::after {
-        // L'animation se positionne pil poil sur le cadre en relative
+    }
+
+    &-nav-items-2:hover::after {
         top: 0px;
         left: 0px;
-      }
+    }
 
-      &-nav-items-3 {
+    &-nav-items-3 {
         font-size: 20px;
         font-weight: 400;
         text-decoration: none;
         letter-spacing: 1px;
         padding: 13px 50px 13px;
-        //* à identifier outline 
+        //* à identifier outline
         outline: 0;
         border: 1px solid black;
         cursor: pointer;
         position: relative;
         // background-color: rgba(0, 0, 0, 0);
-      }
-      
-      &-nav-items-3::after {
+    }
+
+    &-nav-items-3::after {
         //* à identifier content
-        content: "";
+        content: '';
         background-color: vars.$Blue;
         width: 100%;
-        // On fait ressortir le texte en dessous
         z-index: -1;
-        // Positionnement décalé du cadre couleur par rapport au cadre départ
         position: absolute;
         height: 100%;
         top: 7px;
         left: 7px;
-        // Petite transition pour l'ésthétique
         transition: 0.2s;
-      }
-      
-      &-nav-items-3:hover::after {
-        // L'animation se positionne pil poil sur le cadre en relative
+    }
+
+    &-nav-items-3:hover::after {
         top: 0px;
         left: 0px;
-      }
+    }
 
-      &-nav-items-4 {
+    &-nav-items-4 {
         font-size: 20px;
         font-weight: 400;
         text-decoration: none;
         letter-spacing: 1px;
         padding: 13px 50px 13px;
-        //* à identifier outline 
         outline: 0;
         border: 1px solid black;
         cursor: pointer;
         position: relative;
         // background-color: rgba(0, 0, 0, 0);
-      }
-      
-      &-nav-items-4::after {
-        //* à identifier content
-        content: "";
+    }
+
+    &-nav-items-4::after {
+        content: '';
         background-color: vars.$Orange;
         width: 100%;
-        // On fait ressortir le texte en dessous
         z-index: -1;
-        // Positionnement décalé du cadre couleur par rapport au cadre départ
         position: absolute;
         height: 100%;
         top: 7px;
         left: 7px;
-        // Petite transition pour l'ésthétique
         transition: 0.2s;
-      }
-      
-      &-nav-items-4:hover::after {
-        // L'animation se positionne pil poil sur le cadre en relative
+    }
+
+    &-nav-items-4:hover::after {
         top: 0px;
         left: 0px;
-      }
+    }
 
-      &-nav-items-5 {
+    &-nav-items-5 {
         font-size: 20px;
         font-weight: 400;
         text-decoration: none;
         letter-spacing: 1px;
         padding: 13px 50px 13px;
-        //* à identifier outline 
         outline: 0;
         border: 1px solid black;
         cursor: pointer;
         position: relative;
         // background-color: rgba(0, 0, 0, 0);
-      }
-      
-      &-nav-items-5::after {
-        //* à identifier content
-        content: "";
+    }
+
+    &-nav-items-5::after {
+        content: '';
         background-color: vars.$Pink;
         width: 100%;
-        // On fait ressortir le texte en dessous
         z-index: -1;
-        // Positionnement décalé du cadre couleur par rapport au cadre départ
         position: absolute;
         height: 100%;
         top: 7px;
         left: 7px;
-        // Petite transition pour l'ésthétique
         transition: 0.2s;
-      }
-      
-      &-nav-items-5:hover::after {
-        // L'animation se positionne pil poil sur le cadre en relative
+    }
+
+    &-nav-items-5:hover::after {
         top: 0px;
         left: 0px;
-      }
-   
+    }
 }
-

@@ -10,8 +10,6 @@ class NavBurger extends Component {
         super(props);
         this.openIcon = React.createRef();
         console.log(this.icon);
-        this.closeIcon = React.createRef();
-        console.log(this.icon);
         this.modal = React.createRef();
         console.log(this.modal);
     }
