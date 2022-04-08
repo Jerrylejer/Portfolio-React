@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Header from '../../components/Header/Header';
+import enveloppe from '../../assets/image/enveloppe.png';
 import './contacts.scss';
 
 const Contact = () => {
@@ -142,16 +143,12 @@ const Contact = () => {
           value={message}
         />
       </div>
-      <input
-        className="button"
-        type="button"
-        value="Envoyer"
-        onClick={handleSubmit}
-      />
+      <div>
+        <img src={enveloppe} className="enveloppe" alt="enveloppe" onClick={handleSubmit} value="Envoyer" />
+      </div>
       <div className="form-message"></div>
     </form>
 </div>
-    
   );
 };
 

@@ -10,7 +10,7 @@
 
 h3 {
     margin-top: -1em;
-    color: rgba(0, 8, 10, 0.589)
+    color: rgba(255, 255, 255, 0.794);
 }
 
 .contact-form {
@@ -49,29 +49,15 @@ input {
     width: 22em;
 }
 
-.button {
-    font-size: 1em;
-    font-weight: 400;
-    text-decoration: none;
-    letter-spacing: 1px;
-    padding: 0.5em 2em 0.5em;
-    margin-bottom: -0.3em;;
-    outline: 0;
-    border: 1px solid black;
-    border-radius: 5px;
-    cursor: pointer;
-    position: relative;
-    background: rgb(222,222,222);
-    background: linear-gradient(120deg, rgba(222,222,222,1) 0%, rgba(245,152,3,1) 50%, rgba(221,221,221,1) 100%);
+.enveloppe {
+    margin-top: 1em;
+    height: 3em;
 }
 
-.button:hover {
-  transform: scale(1.03);
-  transition: 0.3s;
-  background: rgb(222,222,222);
-  background: linear-gradient(120deg, rgba(222,222,222,1) 0%, rgba(84,245,38,1) 50%, rgba(221,221,221,1) 100%);
-  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.32); 
-  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.32);
+.enveloppe:hover {
+    transform: scale(1.4);
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 //! Mise en forme des messages d'erreurs à la soumission du formulaire
