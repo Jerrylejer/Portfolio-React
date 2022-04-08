@@ -8,8 +8,9 @@
     margin-bottom: -1em;
 }
 
-h2 {
+h3 {
     margin-top: -1em;
+    color: rgba(0, 8, 10, 0.589)
 }
 
 .contact-form {
@@ -30,12 +31,14 @@ h2 {
     padding: 3em 3em;
     margin-bottom: 1em;
     margin-top: 1em;
+    border-radius: 10px;
 }
 
 input {
     font-family: 'poppins';
     padding: 1em 6em;
     margin-bottom: 1em;
+    border-radius: 10px;
 }
 
 .email-content {

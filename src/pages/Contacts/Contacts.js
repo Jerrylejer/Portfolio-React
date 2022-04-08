@@ -94,7 +94,7 @@ const Contact = () => {
 <div className="container">
     <Header /> 
     <form className="contact-form">
-      <h2>Contactez-moi!</h2>
+      <h3>Contactez-moi !</h3>
       <div className="form-content">
         <input
           type="text"

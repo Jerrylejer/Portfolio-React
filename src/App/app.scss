@@ -5,5 +5,21 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.soleil {
+  height: 7em;
+}
+
+.lune {
+  height: 5em;
 }
  

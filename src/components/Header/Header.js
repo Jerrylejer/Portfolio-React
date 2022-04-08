@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <div className="devops-wrapper">
             <div>
-            <p>Développeur Web Full Stack JS & REACT</p>
+            <p>Développeur Web Front-end JS & REACT</p>
             </div>
         </div>
     );

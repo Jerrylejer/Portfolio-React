@@ -1,3 +1,5 @@
+// @use 'vars';
+
 .devops {
     display: flex;
     flex-direction: column;
@@ -7,15 +9,21 @@
     // Animation de vagues colorés sur le texte
     &-wrapper {
         text-align: center;
+        margin-top: -2em;
         p {
             color: #fff;
             font-family: 'shizuru';
-            font-size: 2.5em;
+            font-size: 3em;
             background: linear-gradient(
+                // to right,
+                // #f8f6f6 20%,
+                // #cef604 10%,
+                // #1206f0 5%
                 to right,
-                #0a0a0a 10%,
-                #adc6d1 50%,
-                #f02106 60%
+                #1206f0 60%,
+                #cef604 60%,
+                #f8f6f6 30%
+              
             );
             // background-size: auto auto;
             // background-clip: border-box;
