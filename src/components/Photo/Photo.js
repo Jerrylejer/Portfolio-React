@@ -9,9 +9,9 @@ const Photo = () => {
     return (
         <div>
             <div>
-                <img src={avatar} alt="Jérôme" className="moi"/>
+                <img src={avatar} alt="Jérôme" className="moi2"/>
                 <img src={avatarRevolver} alt="Jérôme" className="moi"/>
-                <img src={avatarBis} alt="Jérôme" className="moi"/>
+                <img src={avatarBis} alt="Jérôme" className="moi3"/>
             </div>
         </div>
     );
