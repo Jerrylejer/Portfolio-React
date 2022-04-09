@@ -1,17 +1,19 @@
 .moi {
     height: 25em;
     animation: centre 1s linear;
-    animation-delay: 2.3s;
+    animation-delay: 5s;
 }
 
 .moi2 {
     height: 25em;
     animation: apparitionGauche 3s ease;
+    animation-delay: 2s;
 }
 
 .moi3 {
     height: 25em;
     animation: apparitionDroite 3s ease;
+    animation-delay: 2s;
 }
 
 // Animations des avatars gauche, droite et centre lors de l'ouverture de la page

@@ -9,6 +9,7 @@ import MonCv from '../pages/MonCv/MonCv';
 import Contacts from '../pages/Contacts/Contacts';
 import Page404 from '../pages/Page404/Page404';
 import Footer from '../components/Footer/Footer';
+import CurtainModal from '../components/CurtainModal/CurtainModal';
 import './app.scss';
 import '../../src/index.scss';
 import soleil from '../assets/image/soleil.png';
@@ -42,6 +43,7 @@ function App() {
 
     return (
         <div className='app'>
+            <CurtainModal />
             <Nav />
             <NavBurger />
             <div className='btn'>

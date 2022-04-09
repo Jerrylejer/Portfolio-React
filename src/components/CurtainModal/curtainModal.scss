@@ -1,0 +1,28 @@
+.modal {
+    display: flex;
+    justify-content: center;
+    transition: top 0.9s;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    opacity: 1;
+    z-index: 9999;
+    animation: openCurtain 5s linear;
+    //! permet de garder le dernier état de l'animation en place
+    animation-fill-mode: forwards;
+
+}
+
+.curtain {
+    width: 100vw;
+}
+
+@keyframes openCurtain {
+    0% {transform: translateY(0px)}
+    25% {transform: translateY(-200px)}
+    75% {transform: translateY(-500px)}
+    100% {transform: translateY(-1500px)}
+}
+
