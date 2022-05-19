@@ -14,6 +14,7 @@ import './app.scss';
 import '../../src/index.scss';
 import soleil from '../assets/image/soleil.png';
 import lune from '../assets/image/lune.png';
+import ReactTooltip from 'react-tooltip';
 
 function App() {
     //* Mise en place du chargeur de thèmes
@@ -36,9 +37,9 @@ function App() {
     };
     // Changement de l'intitulé du bouton
     const themes = dark ? (
-        <img src={soleil} className='soleil' alt='soleil' />
+        <img src={soleil} className='soleil' alt='soleil' data-tip="MODE JOUR" data-place="left" data-background-color="yellow" data-text-color="dark"/>
     ) : (
-        <img src={lune} className='lune' alt='lune' />
+        <img src={lune} className='lune' alt='lune' data-tip="MODE NUIT" data-place="left" />
     );
 
     return (
@@ -50,6 +51,7 @@ function App() {
                 <div onClick={toggleDark} className='btn'>
                     {themes}
                 </div>
+                <ReactTooltip delayHide={200} effect="solid"/>
             </div>
             <Routes>
                 <Route path='/' element={<Home />} />
