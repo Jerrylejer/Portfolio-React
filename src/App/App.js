@@ -37,7 +37,7 @@ function App() {
     };
     // Changement de l'intitulé du bouton
     const themes = dark ? (
-        <img src={soleil} className='soleil' alt='soleil' data-tip="MODE JOUR" data-place="left" data-background-color="yellow" data-text-color="dark"/>
+        <img src={soleil} className='soleil' alt='soleil' data-tip="MODE JOUR" data-place="left" />
     ) : (
         <img src={lune} className='lune' alt='lune' data-tip="MODE NUIT" data-place="left" />
     );
