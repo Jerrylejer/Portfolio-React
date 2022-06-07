@@ -20,14 +20,15 @@ const Viepro = () => {
     return (
         <div>
             <Header />
-            <div
-                className='vie-pro'
-            >
+            <div className='vie-pro'>
                 <p className='vie-pro-text'>
                     Cliquez sur le CV pour le consulter et le télécharger
                 </p>
-                <div className='pdf__container'  data-tip='Lien Cv - nouvelle fenêtre'
-                data-place='right'>
+                <div
+                    className='pdf__container'
+                    data-tip='Lien Cv - nouvelle fenêtre'
+                    data-place='right'
+                >
                     <Document
                         className='pdf'
                         file='/CV_2022-03-23_Jérôme_Richard.pdf'
@@ -41,6 +42,7 @@ const Viepro = () => {
                     >
                         <Page height='500' pageNumber={pageNumber} />
                     </Document>
+                    <ReactTooltip delayHide={200} effect='solid' />
                 </div>
             </div>
         </div>

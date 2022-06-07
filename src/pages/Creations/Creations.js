@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../../components/Header/Header';
+import ReactTooltip from 'react-tooltip';
 import dyl from '../../assets/image/dyl.png';
 import './creations.scss';
 
@@ -8,14 +9,23 @@ const Creations = () => {
         <div>
             <Header />
             <div className='projects'>
-                <a
-                    href='https://documentyourlife-dyl.web.app/'
-                    className='dyl'
-                    target='_blank'
-                    rel='noreferrer'
-                >
-                    <img src={dyl} className='logo-dyl' alt='Dyl' />
-                </a>
+                <div className='projects__link'>
+                    <a
+                        href='https://documentyourlife-dyl.web.app/'
+                        className='dyl'
+                        target='_blank'
+                        rel='noreferrer'
+                    >
+                        <img
+                            src={dyl}
+                            className='logo-dyl'
+                            alt='Dyl'
+                            data-tip='Lien projet - nouvelle fenêtre'
+                            data-place='right'
+                        />
+                    </a>
+                    <ReactTooltip delayHide={200} effect='solid' />
+                </div>
                 <p className='projects-dyl'>
                     Projet mené en groupe de 5 développeurs lors de ma formation
                     "Développeur Web et Web-Mobile" au sein de l'école O'Clock.
