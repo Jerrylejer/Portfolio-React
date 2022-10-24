@@ -48,7 +48,7 @@ class NavBurger extends Component {
                             className='navigation-nav-mobile-items-3'
                             to='/Creations'
                         >
-                            Créations
+                            Projets
                         </NavLink>
                         <NavLink
                             onClick={this.openNav}

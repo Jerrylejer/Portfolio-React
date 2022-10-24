@@ -44,7 +44,7 @@ function App() {
 
     return (
         <div className='app'>
-            <CurtainModal />
+            {/* <CurtainModal /> */}
             <Nav />
             <NavBurger />
             <div className='btn'>

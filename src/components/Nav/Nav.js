@@ -14,7 +14,7 @@ const Nav = () => {
                     Skills
                 </Link>
                 <Link className='navigation-nav-items-3' to='/Creations'>
-                    Créations
+                   Projets
                 </Link>
                 <Link className='navigation-nav-items-4' to='/ViePro'>
                     Mon CV

@@ -31,11 +31,11 @@ const Viepro = () => {
                 >
                     <Document
                         className='pdf'
-                        file='/CV_2022-06-10_Jérôme_Richard_Développeur_Web.pdf'
+                        file='/CV_Développeur_Full_Stack_Jérôme_Richard (1).pdf'
                         onLoadSuccess={onDocumentLoadSuccess}
                         onClick={() =>
                             window.open(
-                                '/CV_2022-06-10_Jérôme_Richard_Développeur_Web.pdf',
+                                '/CV_Développeur_Full_Stack_Jérôme_Richard (1).pdf',
                                 '_blank'
                             )
                         }
